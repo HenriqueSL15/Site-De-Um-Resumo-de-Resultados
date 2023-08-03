@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @font-face { font-family: HankenG; src: url('HankenGrotesk-Bold.ttf'); } 
+
+    body{
+      background-color: white;
+    }
+
+    .container {
+      width: 1600px;
+      height: 900px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      
+    }
+
+    .box {
+      position: relative;
+      left: 27%;
+      width: 350px;
+      height: 500px;
+      background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+      border-radius: 25px;
+      z-index: 2;
+    }
+
+    .box2 {
+      position: relative;
+      left: 17%;
+      width: 500px;
+      height: 500px;
+      border-radius: 25px;
+      box-shadow: 2px 2px 150px 1px hsla(222, 94%, 62%, 0.3);
+      z-index: 1;
+    }
+
+    .minibox{
+      position:relative;
+      
+      top: 50px;
+      left: 200px;
+      z-index: 3;
+      background-color: hsl(0, 100%, 67%);
+      width:275px;
+      height: 50px;
+      border-radius:7px;
+      opacity: 5%;
+    }
+
+    .verticalDiv{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .primaryText{
+      display: flex;
+      position: relative;
+      justify-content: center;
+
+      font-size: 15px;
+      top: 50px;
+      scale: 1.7;
+
+      font-family: HankenG;
+      color:hsla(221, 100%, 96%,50%);
+    }
+
+    .dot {
+      position:relative;
+      display: flex;
+      top:60px;
+      left: 75px;
+
+      scale: 0.99999999;
+
+      background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+      
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+
+      
+
+    }
+
+
+  </style>
+</head>
+<body>
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -->
+
+  
+  <div class="container">
+    
+    <div class="box"> 
+      <h1 class="primaryText">Your result</h1>
+      <br>
+      <span class="dot">
+        <h1 class="primaryText" style="scale: 5;left: 90px ;top: 390px;color:white">76</h1>
+        <h1 class="primaryText" style="scale: 1.2; opacity: 75%;left: 60px;top: 130px;">of 100</h1>
+      </span>
+      <br>
+      <h1 class="primaryText" style="opacity: 1;color: white;top: 50px;font-size: 20px;">Great</h1>
+      <br>
+      <h1 class="primaryText" style="top: 40px;font-size: 60%;">You scored higher than 65% of</h1>
+      <h1 class="primaryText" style="top: 40px;font-size: 60%;">the people who have taken</h1>
+      <h1 class="primaryText" style="top: 40px;font-size: 60%;">these tests.</h1>
+    </div>
+    <div class="box2" style="background-image: linear-gradient(to right,rgba(251, 251, 251, 0),hsl(0, 0%, 100%))">
+      <h1 class="primaryText" style="position:relative;left: 10px;color: hsl(224, 30%, 27%);">Summary</h1>
+      <br>
+
+
+
+      
+    </div>
+
+      <div class="minibox" style="left: -25px;top: -115px;z-index:5;">
+      </div>
+      <img src="assets/images/icon-reaction.svg" style="position:relative;top:-115px;scale: 1;left:-290px;z-index: 45;" alt=""> 
+      <h1 class="primaryText" style="color:hsl(0, 96%, 63%);top: -115px;font-size: 10px;left: -260px;z-index: 5;">Reaction</h1>
+      <h1 class="primaryText" style="color:hsl(224, 30%, 27%);top: -115px;font-size: 10px;left: -180px;z-index: 5;">80</h1>
+      <h1 class="primaryText" style="color:hsla(224, 30%, 27%,50%);top: -117px;font-size: 10px;left: -160px;z-index: 5;"> / 100</h1>
+
+
+      <div class="minibox" style="background-color: hsl(39, 100%, 56%);left: -395px;top: -40px;z-index:5;">
+      </div>
+      <img src="assets/images/icon-memory.svg" style="position:relative;top:-40px;scale: 1;left: -660px;z-index: 45;" alt="">
+      <h1 class="primaryText" style="color:hsl(39, 100%, 56%);top: -40px;font-size: 10px;left: -630px;z-index:5;">Memory</h1>
+      <h1 class="primaryText" style="color:hsl(224, 30%, 27%);top: -40px;font-size: 10px;left: -548px;z-index: 5;">92</h1>
+      <h1 class="primaryText" style="color:hsla(224, 30%, 27%,50%);top: -40px;font-size: 10px;left: -528px;z-index: 5;"> / 100</h1>
+      
+      
+      
+  </div>
+    <div>
+    <div class="minibox" style="background-color: hsl(126, 100%, 51%);left: 825px;top: -430px;z-index:5;">
+    </div>
+    
+    <img src="assets/images/icon-verbal.svg" style="position: relative;left: 835px;top: -462px;" alt="">
+    <h1 class="primaryText" style="color:hsl(166, 100%, 37%);top: 492px;font-size: 10px;left: 890px;z-index:5;position:absolute">Verbal</h1>
+    <h1 class="primaryText" style="color:hsl(224, 30%, 27%);top: 490px;font-size: 10px;left: 1013px;z-index: 5;position:absolute">61</h1>
+    <h1 class="primaryText" style="color:hsla(224, 30%, 27%,50%);top: 490px;font-size: 10px;left: 1045px;z-index: 5;position:absolute"> / 100</h1>
+  </div>
+
+</div>
+<div>
+<div class="minibox" style="background-color: hsl(234, 85%, 45%);left: 825px;top: -430px;z-index:5;">
+</div>
+
+<img src="assets/images/icon-visual.svg" style="position: relative;left: 835px;top: -462px;" alt="">
+<h1 class="primaryText" style="color:hsl(234, 85%, 45%);top: 567px;font-size: 10px;left: 890px;z-index:5;position:absolute">Visual</h1>
+<h1 class="primaryText" style="color:hsl(224, 30%, 27%);top: 567px;font-size: 10px;left: 1013px;z-index: 5;position:absolute">72</h1>
+<h1 class="primaryText" style="color:hsla(224, 30%, 27%,50%);top: 567px;font-size: 10px;left: 1045px;z-index: 5;position:absolute"> / 100</h1>
+</div>
+
+<div class="minibox" style="background-color: hsl(224, 30%, 27%);left: 825px;top: -430px;opacity: 100%;border-radius: 25px;">
+<h1 class="primaryText" style="color:hsl(221, 100%, 96%);top: 10px;font-size: 10px;left: 115px;z-index:5;position:absolute">Continue</h1>
+</div>
+      
+
+  </div>
+</body>
+</html>
